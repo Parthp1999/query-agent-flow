@@ -69,7 +69,7 @@ export function FeaturesSection() {
 
   const stats = [
     { icon: Gauge, label: "Query Speed", value: "< 1s", description: "Average response time" },
-    { icon: Users, label: "Concurrent Users", value: "1000+", description: "Supported connections" },
+    { icon: Users, label: "Concurrent Users", value: "10+", description: "Supported connections" },
     { icon: RefreshCw, label: "Uptime", value: "99.9%", description: "System availability" },
     { icon: Activity, label: "Throughput", value: "10k/min", description: "Queries per minute" }
   ]
