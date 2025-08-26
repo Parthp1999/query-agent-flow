@@ -69,10 +69,10 @@ export function HeroSection() {
               variant="outline" 
               size="lg" 
               className="glass-button px-8 py-4 text-lg group"
-              onClick={() => scrollToSection("how-it-works")}
+              onClick={() => window.location.href = '/presentation'}
             >
               <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              See How It Works
+              Presentation Mode
             </Button>
             <Button 
               variant="outline" 
