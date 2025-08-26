@@ -204,87 +204,12 @@ export function ConclusionStep() {
       </div>
 
       {/* Next Steps */}
-      <div>
-        <h3 className="text-xl font-semibold text-center mb-6">Your Next Steps</h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {nextSteps.map((step, index) => (
-            <Card key={index} className="glass-card text-center hover:glow-border transition-all cursor-pointer">
-              <CardContent className="pt-6">
-                <div className="relative mb-4">
-                  <div className={`p-3 rounded-xl bg-${step.color}/10 w-fit mx-auto`}>
-                    <step.icon className={`h-6 w-6 text-${step.color}`} />
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">
-                    {step.step}
-                  </div>
-                </div>
-                <h4 className="font-semibold mb-2">{step.title}</h4>
-                <p className="text-sm text-muted-foreground mb-4">{step.description}</p>
-                <Button size="sm" className={`bg-gradient-${step.color} hover:opacity-90 w-full`}>
-                  {step.action}
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
+     
 
       {/* Final Call to Action */}
-      <div className="text-center p-8 rounded-xl relative overflow-hidden">
-        {/* Background Effects */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-floating"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-secondary/20 rounded-full blur-xl animate-floating" style={{animationDelay: "2s"}}></div>
-        </div>
-        
-        <div className="relative z-10">
-          <h3 className="text-2xl font-bold mb-4">
-            <span className="gradient-text">Start Building Today</span>
-          </h3>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join thousands of developers who are transforming database interactions with AI. 
-            Get started in minutes, not hours.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-primary hover:opacity-90 px-8">
-              <Rocket className="h-5 w-5 mr-2" />
-              Get Started Free
-            </Button>
-            <Button variant="outline" size="lg" className="glass-button px-8">
-              <Github className="h-5 w-5 mr-2" />
-              View on GitHub
-            </Button>
-            <Button variant="outline" size="lg" className="glass-button px-8">
-              <Mail className="h-5 w-5 mr-2" />
-              Contact Sales
-            </Button>
-          </div>
-          
-          <div className="mt-8 text-sm text-muted-foreground">
-            <p>Free to use • Open source • Production ready</p>
-          </div>
-        </div>
-      </div>
+      
 
-      {/* Contact Information */}
-      <div className="text-center">
-        <h3 className="text-lg font-semibold mb-4">Need Help Getting Started?</h3>
-        <p className="text-muted-foreground mb-6">
-          Our team is here to help you succeed. Reach out with any questions.
-        </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <Badge className="bg-primary/10 text-primary border-primary/20">
-            📧 support@agentic-ai.com
-          </Badge>
-          <Badge className="bg-secondary/10 text-secondary border-secondary/20">
-            💬 Discord Community
-          </Badge>
-          <Badge className="bg-success/10 text-success border-success/20">
-            📚 Documentation
-          </Badge>
-        </div>
-      </div>
+     
     </div>
   )
 }

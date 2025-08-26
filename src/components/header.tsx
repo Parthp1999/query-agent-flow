@@ -11,7 +11,7 @@ export function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
     }
-    
+
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -22,9 +22,8 @@ export function Header() {
   }
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? "glass-card border-b backdrop-blur-xl" : "bg-transparent"
-    }`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass-card border-b backdrop-blur-xl" : "bg-transparent"
+      }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -40,31 +39,31 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button 
+            <button
               onClick={() => scrollToSection("features")}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
               Features
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("architecture")}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
               Architecture
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("how-it-works")}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
               How It Works
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("api")}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
               API
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("getting-started")}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
@@ -74,14 +73,23 @@ export function Header() {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="glass-button">
-              <Github className="h-4 w-4 mr-2" />
-              GitHub
+            <Button
+              variant="outline"
+              size="sm"
+              asChild
+              className="glass-button"
+            >
+              <a
+                href="https://github.com/o1sumit/ai-agent-api"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                <Github className="h-4 w-4 mr-2" />
+                GitHub
+              </a>
             </Button>
-            <Button size="sm" className="bg-gradient-primary hover:opacity-90">
-              <ExternalLink className="h-4 w-4 mr-2" />
-              Demo
-            </Button>
+
             <ThemeToggle />
           </div>
 
@@ -106,31 +114,31 @@ export function Header() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden border-t glass-card mt-4 py-4 space-y-4 animate-slide-up">
-            <button 
+            <button
               onClick={() => scrollToSection("features")}
               className="block w-full text-left px-4 py-2 text-sm font-medium hover:bg-primary/10 rounded-lg transition-colors"
             >
               Features
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("architecture")}
               className="block w-full text-left px-4 py-2 text-sm font-medium hover:bg-primary/10 rounded-lg transition-colors"
             >
               Architecture
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("how-it-works")}
               className="block w-full text-left px-4 py-2 text-sm font-medium hover:bg-primary/10 rounded-lg transition-colors"
             >
               How It Works
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("api")}
               className="block w-full text-left px-4 py-2 text-sm font-medium hover:bg-primary/10 rounded-lg transition-colors"
             >
               API
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("getting-started")}
               className="block w-full text-left px-4 py-2 text-sm font-medium hover:bg-primary/10 rounded-lg transition-colors"
             >

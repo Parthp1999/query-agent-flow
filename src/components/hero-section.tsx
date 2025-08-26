@@ -12,8 +12,8 @@ export function HeroSection() {
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-floating"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-floating" style={{animationDelay: "2s"}}></div>
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-floating" style={{animationDelay: "4s"}}></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-floating" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-floating" style={{ animationDelay: "4s" }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -34,13 +34,13 @@ export function HeroSection() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up" style={{animationDelay: "0.2s"}}>
-            Convert natural language into safe database operations with our intelligent agent. 
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: "0.2s" }}>
+            Convert natural language into safe database operations with our intelligent agent.
             Supports <span className="text-primary font-semibold">MongoDB</span>, <span className="text-secondary font-semibold">PostgreSQL</span>, and <span className="text-accent font-semibold">MySQL</span> with built-in safety guardrails.
           </p>
 
           {/* Key Features Pills */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12 animate-slide-up" style={{animationDelay: "0.4s"}}>
+          <div className="flex flex-wrap justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: "0.4s" }}>
             <div className="flex items-center space-x-2 glass-card px-4 py-2 rounded-full">
               <Database className="h-4 w-4 text-primary" />
               <span className="text-sm font-medium">Multi-DB Support</span>
@@ -56,36 +56,37 @@ export function HeroSection() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-slide-up" style={{animationDelay: "0.6s"}}>
-            <Button 
-              size="lg" 
-              className="bg-gradient-primary hover:opacity-90 text-white px-8 py-4 text-lg glow-primary group"
-              onClick={() => scrollToSection("getting-started")}
-            >
-              Get Started
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-slide-up" style={{ animationDelay: "0.6s" }}>
+            
+            <Button
+              variant="outline"
+              size="lg"
               className="glass-button px-8 py-4 text-lg group"
               onClick={() => window.location.href = '/presentation'}
             >
               <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Presentation Mode
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <Button
+              variant="outline"
+              size="lg"
+              asChild
               className="glass-button px-8 py-4 text-lg"
             >
-              <Github className="mr-2 h-5 w-5" />
-              View on GitHub
+              <a
+                href="https://github.com/o1sumit/ai-agent-api"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                <Github className="mr-2 h-5 w-5" />
+                View on GitHub
+              </a>
             </Button>
           </div>
 
           {/* Demo Preview */}
-          <div className="relative max-w-4xl mx-auto animate-scale-in" style={{animationDelay: "0.8s"}}>
+          <div className="relative max-w-4xl mx-auto animate-scale-in" style={{ animationDelay: "0.8s" }}>
             <div className="glass-card p-8 rounded-2xl shadow-large">
               <div className="text-left">
                 <div className="flex items-center space-x-2 mb-4">
@@ -96,13 +97,13 @@ export function HeroSection() {
                   </div>
                   <span className="text-sm text-muted-foreground ml-4">AI Agent Terminal</span>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <span className="text-primary font-mono">user:</span>
                     <span className="text-foreground">"Get all users with Gmail addresses created in the last week"</span>
                   </div>
-                  
+
                   <div className="flex items-start space-x-3">
                     <span className="text-accent font-mono">agent:</span>
                     <div className="space-y-2">

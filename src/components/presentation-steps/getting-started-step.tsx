@@ -27,8 +27,8 @@ export function GettingStartedStep() {
       description: "Get the code and install dependencies", 
       time: "2 min",
       commands: [
-        "git clone https://github.com/your-org/agentic-ai-agent.git",
-        "cd agentic-ai-agent",
+        "git clone https://github.com/o1sumit/ai-agent-api.git",
+        "cd ai-agent-api",
         "npm install"
       ]
     },
@@ -305,27 +305,7 @@ export function GettingStartedStep() {
         </div>
       </div>
 
-      {/* Call to Action */}
-      <div className="text-center p-6 rounded-xl bg-gradient-primary/10 border border-primary/20">
-        <h3 className="text-xl font-semibold mb-3 text-primary">🚀 Ready to Start Building?</h3>
-        <p className="text-muted-foreground mb-6">
-          Join thousands of developers using Agentic AI to build intelligent database applications
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-gradient-primary hover:opacity-90">
-            <Github className="h-4 w-4 mr-2" />
-            Get Started Now
-          </Button>
-          <Button variant="outline" className="glass-button">
-            <Play className="h-4 w-4 mr-2" />
-            Try Playground
-          </Button>
-          <Button variant="outline" className="glass-button">
-            <Book className="h-4 w-4 mr-2" />
-            Read Docs
-          </Button>
-        </div>
-      </div>
+  
     </div>
   )
 }

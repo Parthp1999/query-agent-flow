@@ -37,10 +37,10 @@ export function GettingStartedSection() {
       description: "Clone the repository and install dependencies",
       time: "2 minutes",
       code: `# Clone the repository
-git clone https://github.com/your-org/agentic-ai-agent.git
+git clone https://github.com/o1sumit/ai-agent-api.git
 
 # Navigate to the project
-cd agentic-ai-agent
+cd ai-agent-api
 
 # Install dependencies
 npm install

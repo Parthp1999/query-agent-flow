@@ -288,19 +288,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIs...`
       </div>
 
       {/* Quick Actions */}
-      <div className="text-center p-6 rounded-xl bg-gradient-glass border border-primary/20">
-        <h3 className="text-lg font-semibold mb-4">🚀 Try It Now</h3>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-gradient-primary hover:opacity-90">
-            <ExternalLink className="h-4 w-4 mr-2" />
-            Open Playground
-          </Button>
-          <Button variant="outline" className="glass-button">
-            <Code className="h-4 w-4 mr-2" />
-            Swagger Docs
-          </Button>
-        </div>
-      </div>
+      
     </div>
   )
 }
