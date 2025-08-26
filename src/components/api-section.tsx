@@ -405,24 +405,7 @@ Content-Type: application/json
           </div>
         </div>
 
-        {/* Quick Actions */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold mb-8">Try It Now</h3>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-gradient-primary hover:opacity-90">
-              <Play className="h-4 w-4 mr-2" />
-              Open Playground
-            </Button>
-            <Button variant="outline" className="glass-button">
-              <ExternalLink className="h-4 w-4 mr-2" />
-              View Swagger Docs
-            </Button>
-            <Button variant="outline" className="glass-button">
-              <Settings className="h-4 w-4 mr-2" />
-              API Configuration
-            </Button>
-          </div>
-        </div>
+        
       </div>
     </section>
   )

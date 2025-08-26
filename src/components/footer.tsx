@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator" 
+import { Separator } from "@/components/ui/separator"
 import { Brain, Github, ExternalLink, Mail, MessageCircle, Book, Zap } from "lucide-react"
 
 export function Footer() {
@@ -44,23 +44,32 @@ export function Footer() {
                 <Brain className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold gradient-text">Agentic AI</h3>
+                <h3 className="text-xl font-bold gradient-text">Agentic AI - <span className="text-white">Doc</span></h3>
                 <p className="text-xs text-muted-foreground">Database Agent</p>
               </div>
             </div>
             <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-              Production-ready AI Agent API that converts natural language into safe database operations. 
+              Production-ready AI Agent API that converts natural language into safe database operations.
               Built with enterprise-grade security and multi-database support.
             </p>
             <div className="flex space-x-3">
-              <Button variant="outline" size="sm" className="glass-button">
-                <Github className="h-4 w-4 mr-2" />
-                Star on GitHub
+              <Button
+                variant="outline"
+                size="sm"
+                asChild
+                className="glass-button"
+              >
+                <a
+                  href="https://github.com/o1sumit/ai-agent-api"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <Github className="h-4 w-4 mr-2" />
+                  Star on GitHub
+                </a>
               </Button>
-              <Button size="sm" className="bg-gradient-primary hover:opacity-90">
-                <ExternalLink className="h-4 w-4 mr-2" />
-                Try Demo
-              </Button>
+
             </div>
           </div>
 
@@ -80,61 +89,17 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
-            <div className="space-y-3">
-              {resources.map((resource, index) => (
-                <a
-                  key={index}
-                  href={resource.href}
-                  className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <resource.icon className="h-4 w-4 mr-2" />
-                  {resource.title}
-                </a>
-              ))}
-            </div>
-          </div>
 
-          {/* Community */}
-          <div>
-            <h4 className="font-semibold mb-4">Community</h4>
-            <div className="space-y-3">
-              {community.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.href}
-                  className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
-                  target={item.href.startsWith("http") ? "_blank" : undefined}
-                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                >
-                  <item.icon className="h-4 w-4 mr-2" />
-                  {item.title}
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
 
         <Separator className="mb-8" />
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
           <div className="text-sm text-muted-foreground">
-            © 2024 Agentic AI. All rights reserved. Built with ❤️ for developers.
+            © 2025 Agentic AI. All rights reserved.
           </div>
-          <div className="flex items-center space-x-6 text-sm text-muted-foreground">
-            <a href="/privacy" className="hover:text-primary transition-colors">
-              Privacy Policy
-            </a>
-            <a href="/terms" className="hover:text-primary transition-colors">
-              Terms of Service
-            </a>
-            <a href="/cookies" className="hover:text-primary transition-colors">
-              Cookie Policy
-            </a>
-          </div>
+
         </div>
 
         {/* Tech Stack Attribution */}

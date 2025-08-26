@@ -19,7 +19,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
           {/* Badge */}
-          <div className="mb-8 animate-fade-in">
+          <div className="mb-8 animate-fade-in mt-10">
             <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors">
               <Zap className="h-3 w-3 mr-2" />
               Production-Ready AI Agent API

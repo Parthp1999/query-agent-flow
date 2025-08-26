@@ -341,28 +341,7 @@ export function SecuritySection() {
           </Card>
         </div>
 
-        {/* Security Testing */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold mb-4">Security Testing</h3>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Our security measures are continuously tested and validated through automated 
-            testing and regular security audits.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" className="glass-button">
-              <Shield className="h-4 w-4 mr-2" />
-              Security Report
-            </Button>
-            <Button variant="outline" className="glass-button">
-              <FileText className="h-4 w-4 mr-2" />
-              Compliance Docs
-            </Button>
-            <Button className="bg-gradient-primary hover:opacity-90">
-              <Zap className="h-4 w-4 mr-2" />
-              Run Security Scan
-            </Button>
-          </div>
-        </div>
+        
       </div>
     </section>
   )

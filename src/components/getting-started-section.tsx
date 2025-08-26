@@ -452,27 +452,7 @@ curl -X POST http://localhost:3000/api/ai-agent/query \\
           </div>
         </div>
 
-        {/* Support */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold mb-4">Need Help?</h3>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Our team is here to help you get started. Join our community or reach out for support.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" className="glass-button">
-              <ExternalLink className="h-4 w-4 mr-2" />
-              Join Discord
-            </Button>
-            <Button variant="outline" className="glass-button">
-              <Github className="h-4 w-4 mr-2" />
-              Report Issue
-            </Button>
-            <Button className="bg-gradient-secondary hover:opacity-90">
-              <Book className="h-4 w-4 mr-2" />
-              Read Docs
-            </Button>
-          </div>
-        </div>
+        
       </div>
     </section>
   )

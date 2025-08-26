@@ -32,7 +32,7 @@ export function Header() {
               <Brain className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold gradient-text">Agentic AI - <span className="text-white"> Documentation </span></h1>
+              <h1 className="text-xl font-bold gradient-text">Agentic AI - <span className="text-white"> Doc </span></h1>
               <p className="text-xs text-muted-foreground">Database Agent</p>
             </div>
           </div>
