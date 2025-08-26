@@ -230,7 +230,7 @@ export function ConclusionStep() {
       </div>
 
       {/* Final Call to Action */}
-      <div className="text-center p-8 rounded-xl bg-gradient-hero relative overflow-hidden">
+      <div className="text-center p-8 rounded-xl relative overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-floating"></div>

@@ -85,7 +85,7 @@ export function PresentationStepper({ steps, autoPlay = false, onClose }: Presen
   const CurrentStepComponent = steps[currentStep]?.component
 
   return (
-    <div className={`min-h-screen bg-gradient-hero relative ${isFullscreen ? 'fullscreen' : ''}`}>
+    <div className={`min-h-screen  relative ${isFullscreen ? 'fullscreen' : ''}`}>
       {/* Header Controls */}
       <div className="absolute top-0 left-0 right-0 z-50 p-4">
         <div className="flex items-center justify-between">
@@ -170,7 +170,7 @@ export function PresentationStepper({ steps, autoPlay = false, onClose }: Presen
           </div>
 
           {/* Step Content */}
-          <Card className="glass-card shadow-large max-w-6xl mx-auto">
+          <Card className="glass-card shadow-large max-w-6xl mx-auto cus-auto-scroll-wrap">
             <CardContent className="p-8">
               {CurrentStepComponent && <CurrentStepComponent />}
             </CardContent>
